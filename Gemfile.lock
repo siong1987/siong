@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/andrusha/middleman-cloudfront
+  revision: 7344f8b3ffe6f4d94704f4e23a32fedb37e4d427
+  specs:
+    middleman-cloudfront (0.2.1)
+      fog-aws (~> 0.9)
+      middleman-cli (>= 4.0)
+      middleman-core (>= 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -157,6 +166,7 @@ PLATFORMS
 
 DEPENDENCIES
   middleman (>= 4.0.0)
+  middleman-cloudfront!
   middleman-livereload
   middleman-s3_sync
   tzinfo-data

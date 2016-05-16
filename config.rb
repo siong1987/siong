@@ -46,6 +46,13 @@ end
 # Amazon S3 configuration
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 'siong.com' # The name of the S3 bucket you are targeting. This is globally unique.
-  s3_sync.region                     = 'us-west-1'     # The AWS region for your bucket.
+  s3_sync.region                     = 'us-west-1' # The AWS region for your bucket.
   s3_sync.index_document             = 'index.html'
+end
+
+# Amazon CloudFront invalidation
+activate :cloudfront do |cf|
+  cf.access_key_id     = ENV['AWS_ACCESS_KEY']
+  cf.secret_access_key = ENV['AWS_SECRET']
+  cf.distribution_id   = ENV['AWS_DISTRIBUTION_ID']
 end
