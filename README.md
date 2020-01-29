@@ -4,7 +4,7 @@ What do you think?  A website about me :)
 
 ## Development
 
-We can see changes on the website by starting the local server `bundle exec middleman server`. Since we have `bundle exec middleman-livereload` installed, changes will be automatically reflected without restarting the server.
+We can see changes on the website by starting the local server `bundle exec middleman server`. Since we have `middleman-livereload` installed, changes will be automatically reflected without restarting the server.
 
 ## Deployment
 

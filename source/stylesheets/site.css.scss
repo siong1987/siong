@@ -1,15 +1,26 @@
 @charset "utf-8";
 @import "normalize";
+@import url('https://rsms.me/inter/inter.css');
+
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
 
 body {
-  background: #663399;
-  line-height: 1.3em;
+  color: #323232;
+}
+
+@media screen and ( max-width: 380px ){
+  body {
+      margin: 0 20px;
+  }
 }
 
 section.welcome {
-  width: 280px;
+  max-width: 360px;
   position: relative;
-  margin: 100px auto;
+  margin: 2em auto;
 }
 
 .logo {
@@ -18,23 +29,15 @@ section.welcome {
 }
 
 h1 {
-  color: #ededed;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.9em;
-  font-weight: 300;
+  color: #323232;
   margin: 0;
 }
 
 .doc {
-  color: #ededed;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.9em;
-  font-weight: 300;
-
   a {
-    color: #ededed;
+    color: #323232;
     text-decoration: none;
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid #323232;
   }
 }
 
