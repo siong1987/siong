@@ -9,6 +9,7 @@ html { font-family: 'Inter', sans-serif; }
 
 body {
   color: #323232;
+  font-size: 14px;
 }
 
 @media screen and ( max-width: 380px ){
@@ -18,7 +19,7 @@ body {
 }
 
 section.welcome {
-  max-width: 360px;
+  max-width: 320px;
   position: relative;
   margin: 2em auto;
 }
@@ -34,6 +35,8 @@ h1 {
 }
 
 .doc {
+  line-height: 20px;
+
   a {
     color: #323232;
     text-decoration: none;
